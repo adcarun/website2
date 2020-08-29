@@ -1,0 +1,125 @@
+<footer>
+	<div class="footerContainer">
+       <div class="container">
+       		<div class="row">
+				
+            	<div class="footerLinks col-md-2 col-sm-4 col-xs-6">
+					<?php if ($this->countModules('footer-menu-quick-links')) : ?>
+						<jdoc:include type="modules" name="footer-menu-quick-links" style="none" />  
+					<?php endif; ?>
+                </div>
+                <div class="footerLinks col-md-2 col-sm-4 col-xs-6">
+					<?php if ($this->countModules('footer-menu-compliances')) : ?>
+						<jdoc:include type="modules" name="footer-menu-compliances" style="none" />  
+					<?php endif; ?>
+                </div>
+                <div class="footerLinks col-md-2 col-sm-4 col-xs-6">
+					<?php if ($this->countModules('footer-menu-examinations')) : ?>
+						<jdoc:include type="modules" name="footer-menu-examinations" style="none" />  
+					<?php endif; ?>
+                </div>
+                
+                <div class="clearfix visible-sm-block"></div>
+                
+               <div class="footerLinks col-md-2 col-sm-4 col-xs-6">
+					<?php if ($this->countModules('footer-menu-archives')) : ?>
+						<jdoc:include type="modules" name="footer-menu-archives" style="none" />  
+					<?php endif; ?>
+                </div>
+                <div class="footerLinks col-md-2 col-sm-4 col-xs-6">
+					<?php if ($this->countModules('footer-menu-downloads')) : ?>
+						<jdoc:include type="modules" name="footer-menu-downloads" style="none" />  
+					<?php endif; ?>                	
+                </div>
+                
+               
+                
+                
+                <div class="clearfix visible-sm-block"></div>
+                
+                
+                
+            </div>
+       </div>
+    </div>
+    
+    <div class="footerContainer footerSocialContainer">
+       <div class="container">
+       		<div class="row">
+                <div class="col-md-12 text-center">
+                	<p class="socialLinks">
+                    	<span>Connect With Us</span>
+                       <!-- <a href="#" title="mail"><i class="fa fa-envelope" aria-hidden="true"></i></i></a>
+                    	<a href="#" title="twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                        <a href="#" title="facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                        <a href="#" title="youtube"><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
+                        <a href="#" title="linkedin"><i class="fa fa-linkedin" aria-hidden="true"></i></a>-->
+						<?php if ($this->countModules('social-links-footer')) : ?>	
+						<jdoc:include type="modules" name="social-links-footer" style="none" />
+						<?php endif; ?>
+                    </p>
+                </div>
+            </div>
+       </div>
+    </div>
+    
+    <div class="container-fluid copyrightContainer">
+       <div class="container">
+       		<div class="row">
+            	<div class="col-md-4">
+                	<p>Copyright &copy; <?php echo date('Y'); ?> <?php echo $sitename; ?>. All Rights Reserved</p>
+                </div>
+                <div class="col-md-4 text-center">
+                	<p class="hidden-xs">Best viewed in IE 10+, Firefox 20+, Chrome , Safari5+, Opera12+ </p>
+                </div>
+                <div class="col-md-12">
+                	<p>:::| <a style="text-decoration: none;" href="http://dimakhconsultants.com/" target="_blank" title="Website design development, Search Engine Optimization, Internet marketing, Web hosting, company in pune India, Web-Flash based designers &amp; consultants in Pune">powered by dimakh consultants</a> |:::</p>
+                </div>
+            </div>    
+       </div>
+    </div>
+</footer>    
+    <div class="floting-points">
+    	<ul>
+    		<li><a href="javascript:void(0)" data-toggle="modal" data-target="#myModal"><i class="fa fa-list-alt" aria-hidden="true"></i> Enquiry</a></li>
+            <!--<li><a href="#"><i class="fa fa-share-alt" aria-hidden="true"></i> Share</a></li>    
+        	<li><a href="#"><i class="fa fa-comments" aria-hidden="true"></i> Feedback</a></li>-->
+        </ul>
+    </div>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <div class="modal fade bs-example-modal-lg" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="false">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button aria-label="Close" data-dismiss="modal" class="close" type="button"><span aria-hidden="true">×</span></button>
+                <h4 class="modal-title" id="myModalLabel">Send Enquiry</h4> </div>
+            <div class="modal-body">
+                
+                <div class="row" id="productForm">
+					
+                    <p class="popp">All fields are compulsory</p>
+					<?php if ($this->countModules('enquiry-form')) : ?>	
+						<jdoc:include type="modules" name="enquiry-form" style="none" />
+					<?php endif; ?>                   
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<a href="#" id="back-to-top" title="Back to top">
+	<span class="glyphicon glyphicon-menu-up"></span>
+</a>

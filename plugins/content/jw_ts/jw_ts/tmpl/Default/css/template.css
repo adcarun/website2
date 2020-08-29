@@ -1,0 +1,239 @@
+/**
+ * @package	   Tabs and Sliders [for articles]
+ * @contact    www.joomlashack.com, hello@joomlashack.com
+ * @author     JoomlaWorks - http://www.joomlaworks.net
+ * @author     Alledia - http://www.joomlashack.com
+ * @copyright  Copyright (c) 2006 - 2015 JoomlaWorks Ltd. All rights reserved.
+ * @copyright  Copyright (c) 2016 Open Source Training, LLC. All rights reserved
+ * @license    GNU/GPL license: http://www.gnu.org/copyleft/gpl.html
+ */
+
+/* Please note: if you wish to target IE6 to IE8 specifically, prepend any selector with "body.jwts_IsIEX" replacing X with either 6, 7 or 8 */
+
+/* Generic
+------------------------------------------ */
+a:active,
+a:focus {outline:0;}
+.jwts_clr {display:block;clear:both;height:0;line-height:0;margin:0;padding:0;border:0;}
+
+
+
+/* Tabs
+------------------------------------------ */
+.jwts_tabber {display:none;}
+.jwts_tabberlive {margin:4px 0;padding:0;}
+
+/* The tab navigation */
+ul.jwts_tabbernav {margin:0 0 0 0px!important;padding:0!important;list-style:none!important;list-style-image:none!important;background:none!important;line-height:normal!important;height:auto!important;text-align:left!important;}
+ul.jwts_tabbernav li {/*margin:0!important;padding:0!important;line-height:normal!important;list-style:none!important;list-style-image:none!important;background:none!important;display:inline!important;*/
+	position: relative;
+    margin: 0!important;
+    display: inline-block;
+    width: auto;
+    padding: 0!important;
+    border-bottom: none;
+    border: 1px solid #3aa5e0;	
+  /*  border-right: 0;*/
+}
+ul.jwts_tabbernav li:before{ content:none!important; }
+ul.jwts_tabbernav li a {
+/*font-size:14px;margin:0 2px 0 0;padding:4px 10px 2px;color:#222;border-radius:2px 2px 0 0;border:1px solid #bbb;border-bottom:none;background:#eee url(../images/tab_bg.jpg) repeat-x 50%;*/
+margin: 0;
+    display: inline-block;
+    padding: 16px 32px;
+    font-size: 16px;
+    color: #000;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+ul.jwts_tabbernav li a:hover {
+/*color:#c64934;border:1px solid #aaa;border-bottom:none;background:#f2f2f2;text-decoration:none;*/
+    border-radius: 0;
+    background: #3aa5e0;
+    color: #ffffff;
+    border: transparent;
+    font-weight: 700;
+	text-decoration:none!important;
+   /* border-bottom: 1px solid #3aa5e0;
+    border-top: 1px solid #3aa5e0;*/
+}
+ul.jwts_tabbernav li a:active,
+ul.jwts_tabbernav li a:focus {outline:0;}
+ul.jwts_tabbernav li.jwts_tabberactive a {/*background:#fff;border-bottom:1px solid #fff;*/
+    border-radius: 0;
+    background: #2e7dcc;
+    color: #ffffff;
+    border: transparent;
+    font-weight: 700;
+   /* border-bottom: 1px solid #3aa5e0;
+    border-top: 1px solid #3aa5e0;*/
+}
+ul.jwts_tabbernav li.jwts_tabberactive a:hover {/*background:#fff;border-bottom:1px solid #fff;text-decoration:none;*/}
+ul.jwts_tabbernav li.jwts_tabberactive,
+ul.jwts_tabbernav li.jwts_tabberinactive {
+/*background:none;padding:0;margin:0;
+    border-radius: 0;
+    background: #3aa5e0!important;
+    color: #ffffff;
+    border: transparent;
+    font-weight: 700;
+    border-bottom: 1px solid #3aa5e0;
+    border-top: 1px solid #3aa5e0;*/
+}
+
+/* The tab content */
+.jwts_tabberlive .jwts_tabbertab {
+/*text-align:left;margin:2px 0 0!important;padding:8px;border:1px solid #bbb;border-radius:2px;background:#fff;*/
+    background: #ebebeb;
+    padding: 20px;
+    border: 1px solid #3aa5e0;
+    margin-top: -1px;
+}
+.jwts_tabberlive .jwts_tabbertab h2.jwts_heading,
+.jwts_tabberlive .jwts_tabbertabhide {display:none;}
+
+/* IE7 specific */
+body.jwts_IsIE7 ul.jwts_tabbernav {position:relative;z-index:9;}
+body.jwts_IsIE7 .jwts_tabberlive .jwts_tabbertab {position:relative;z-index:8;margin:2px 0 0!important;}
+
+
+
+/* Sliders (accordion)
+------------------------------------------ */
+div.jwts_toggleControlContainer {
+margin-top: 0;
+    margin-bottom: 0;
+    font-size: 16px;
+    color: inherit;
+}
+	div.jwts_toggleControlContainer a.jwts_toggleControl {
+	/*font-size:14px;font-weight:normal;text-decoration:none;display:block;border:1px solid #ccc;border-radius:2px;background:url(../images/tab_bg.jpg) repeat-x;background-position-y:40%;padding:4px;margin-bottom:1px;line-height:normal;*/
+	display: block;
+    padding: 12px 15px;
+    background: #2e7dcc;
+    font-size: 18px;
+    color: #ffffff;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    position: relative;
+    padding-left: 75px;
+	text-decoration:none;
+	}
+	div.jwts_toggleControlContainer a.jwts_toggleOff .fa{
+	color: #000000;
+    background: #fff;
+    padding: 14.5px;
+    position: absolute;
+    left: 1px;
+    top: 1px;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+	}
+	div.jwts_toggleControlContainer a.jwts_toggleOff span.caret{
+	display: inline-block;
+    width: 0;
+    height: 0;
+    margin-left: 2px;
+    vertical-align: middle;
+    border-left: 15px dashed;
+    border-top: 24px solid transparent;
+    border-bottom: 25px solid transparent;
+    top: 0;
+    position: absolute;
+    left: 43px;
+    color: #fff;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+	}
+		div.jwts_toggleControlContainer a.jwts_toggleOn {
+		/*color:#c64934;margin-bottom:0;border-radius:2px 2px 0 0;*/
+		text-decoration: none;
+		background: #175694;
+		transition: all 0.5s;
+		-webkit-transition: all 0.5s;
+		}
+		div.jwts_toggleControlContainer a.jwts_toggleOn .fa{
+			color: #000000;
+			background: #fff;
+			padding: 14.5px;
+			position: absolute;
+			left: 1px;
+			top: 1px;
+			transition: all 0.5s;
+			-webkit-transition: all 0.5s;
+		}
+		div.jwts_toggleControlContainer a.jwts_toggleOn span.caret{
+			display: inline-block;
+			width: 0;
+			height: 0;
+			margin-left: 2px;
+			vertical-align: middle;
+			border-left: 15px dashed;
+			border-top: 24px solid transparent;
+			border-bottom: 25px solid transparent;
+			top: 0;
+			position: absolute;
+			left: 43px;
+			color: #fff;
+			 transition: all 0.5s;
+			-webkit-transition: all 0.5s;
+		}
+		
+		div.jwts_toggleControlContainer a:hover {
+		/*color:#c64934;margin-bottom:0;border-radius:2px 2px 0 0;*/
+		text-decoration: none;
+		background: #175694;
+		transition: all 0.5s;
+		-webkit-transition: all 0.5s;
+		}
+		div.jwts_toggleControlContainer a:hover .fa{
+			color: #000000;
+			background: #fff;
+			padding: 14.5px;
+			position: absolute;
+			left: 1px;
+			top: 1px;
+			transition: all 0.5s;
+			-webkit-transition: all 0.5s;
+		}
+		div.jwts_toggleControlContainer a:hover span.caret{
+			display: inline-block;
+			width: 0;
+			height: 0;
+			margin-left: 2px;
+			vertical-align: middle;
+			border-left: 15px dashed;
+			border-top: 24px solid transparent;
+			border-bottom: 25px solid transparent;
+			top: 0;
+			position: absolute;
+			left: 43px;
+			color: #fff;
+			transition: all 0.5s;
+			-webkit-transition: all 0.5s;
+		}
+		
+		
+		div.jwts_toggleControlContainer a.jwts_toggleControl span.jwts_togglePlus,
+		div.jwts_toggleControlContainer a.jwts_toggleControl span.jwts_toggleMinus {display:none;}
+		div.jwts_toggleControlContainer a.jwts_toggleOn span.jwts_toggleControlTitle {line-height:normal;/*background:url(../images/arrows.png) no-repeat 0 -146px;padding-left:20px;*/}
+		div.jwts_toggleControlContainer a.jwts_toggleOff span.jwts_toggleControlTitle {line-height:normal;/*background:url(../images/arrows.png) no-repeat 0 -1px;padding-left:20px;*/}
+		div.jwts_toggleControlContainer a.jwts_toggleOn span.jwts_toggleControlNotice {color:#999;font-size:10px;display:block;float:right;line-height:14px;vertical-align:bottom;}
+		div.jwts_toggleControlContainer a.jwts_toggleOff span.jwts_toggleControlNotice {display:none;}
+div.jwts_toggleContent {}
+	div.jwts_content {
+	/*padding:4px 8px;margin-bottom:1px;border:1px solid #ccc;border-radius:0 0 2px 2px;border-top:0;*/
+		border-top-color: #ddd;
+		font-size: 15px;
+		font-weight: 400;
+		color: #666666;
+		margin-bottom: 30px;
+		line-height: 24px;
+		border-top: 1px solid #ddd;
+		padding: 15px;
+		background: #ebebeb;
+		border: 1px solid #175694;
+	}
+
+/* IE7 specific */
+body.jwts_IsIE7 div.jwts_toggleControlContainer a.jwts_toggleOn span.jwts_toggleControlNotice {display:none;}

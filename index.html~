@@ -1,0 +1,43 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>:: Dimakh Consultants ::</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<link href="css/all.css" rel="stylesheet" type="text/css">
+<style type="text/css">
+<!--
+.style1 {color: #333333}
+.style2 {color: #6A6A6A}
+.style3 {
+	color: #666666;
+	font-size: 11px;
+	text-decoration: none;
+	font-family: Arial, Helvetica, sans-serif;
+}
+.style4 {font-size: 11px; text-decoration: none; font-family: Arial, Helvetica, sans-serif;}
+-->
+</style>
+</head>
+
+<body leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+<table width="100%" height="100%" border="0" align="center" cellpadding="0" cellspacing="0">
+  <tr height="5">
+    <td  height="50" bgcolor="A12702"></td>
+  </tr>
+ <tr height="5">
+    <td bgcolor="#CCCCCC" height="5"></td>
+  </tr>
+  <tr> 
+    <td><div align="center"><img src="images/und_cons.jpg" width="550" height="292"><br>
+        <a href="http://www.dimakhconsultants.com" target="_blank" class="textlinks">:::| 
+        powered by dimakh consultants |:::</a></div></td>
+  </tr>
+  <tr height="5">
+    <td bgcolor="#CCCCCC" height="5"></td>
+  </tr>
+    <tr height="5">
+    <td  height="50" bgcolor="A12702"></td>
+  </tr>
+</table>
+</body>
+</html>
